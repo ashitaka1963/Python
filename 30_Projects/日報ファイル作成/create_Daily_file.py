@@ -33,10 +33,10 @@ base_str = connect_str(base_str, h2_2)
 base_str = connect_str(base_str, '\n\n')
 base_str = connect_str(base_str, '<!-- more -->')
 
-# カレントディレクトリを取得
-# path = os.getcwd()
+# 出力ファイルのパス設定
 path = '.\\' +file_name + '.md'
 
+# 書き出し
 with open(path, mode='w', encoding='utf-8') as f:
     f.write(base_str)
 
