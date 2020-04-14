@@ -1,19 +1,12 @@
-# coding: utf-8
-
-# ルール
-# ファイル名    ：　20200409
-# #1            :  2020年4月9日（木） 日報
-
-
 import os
 import datetime
-
-WEEKDAY = ['月','火','水','木','金','土','日']
-base_str = ''
 
 def connect_str(base_str, add_str):
     base_str += add_str
     return base_str
+
+WEEKDAY = ['月','火','水','木','金','土','日']
+base_str = ''
 
 # 現在日付を取得
 today = datetime.date.today()
